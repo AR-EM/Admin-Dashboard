@@ -7,7 +7,7 @@ li {
   list-style-type: none;
 }
 
-img {
+.sidebar img {
   filter: invert(100%);
 }
 
@@ -24,7 +24,7 @@ img {
   height: 930px;
 }
 .header {
-  min-height: 150px;
+  min-height: 200px;
   grid-column: 2/3;
   grid-row: 1/2;
 }
@@ -65,6 +65,73 @@ img {
   display: flex;
   height: 50px;
   gap: 10px;
+}
+
+/*Header*/
+
+.header .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.header .top-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header .top-right {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  align-items: center;
+}
+
+.top-left input {
+  width: 50rem;
+  border-radius: 20px;
+  border: none;
+  background-color: #f1f3f4;
+  padding: 10px;
+  font-size: larger;
+}
+
+input:focus {
+  outline: 2px solid #002fff;
+}
+
+.header .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .bottom-left{
+  display: flex;
+  padding: 0;
+  gap: 15px;
+  align-items: center;
+  font-size: larger;
+}
+
+.bottom-left img{
+  width: 6rem;
+  height: auto;
+}
+
+.header .bottom-right li{
+  font-size: 20px;
+  background-color:#3b82f6;
+  color: white;
+  padding: 12px 35px;
+  border-radius: 50px;
+}
+
+.header .bottom-right ul{
+  display: flex;
+  padding: 0;
+  gap: 20px;
 }
 
 /*Main*/
@@ -110,12 +177,11 @@ img {
   font-weight: lighter;
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
 
 .main-content .card-icons {
   filter: invert(1);
@@ -162,7 +228,7 @@ img {
   font-weight: lighter;
 }
 
-.trend-lists > div{
+.trend-lists > div {
   display: flex;
   gap: 10px;
   align-items: center;
